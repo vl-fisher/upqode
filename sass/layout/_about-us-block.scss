@@ -1,0 +1,44 @@
+/*------------------------------------------------------------------
+  	[ABOUT US]
+------------------------------------------------------------------*/
+
+.about-part {
+  padding: 97px 0;
+  h2 {
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+  }
+  p.subtitle {
+    padding-top: 2px;
+    font-size: 14px;
+    line-height: 175%;
+    letter-spacing: .6px;
+    color: #999;
+  }
+  p.about-part__info {
+    margin-top: 45px;
+    margin-left: -2px;
+    padding-top: 2px;
+    font-size: 14px;
+    line-height: 175%;
+    letter-spacing: .6px;
+  }
+  h5 {
+    text-transform: uppercase;
+  }
+  .about-part__info {
+    margin-bottom: 60px;
+  }
+  .about-part__image {
+    padding: 78px 0 0 210px;
+  }
+}
+
+// MEDIA QUERIES
+@media (max-width: 600px) {
+  .about-part__image {
+    display: none;
+  }
+}

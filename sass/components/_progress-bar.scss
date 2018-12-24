@@ -1,0 +1,34 @@
+/*------------------------------------------------------------------
+    [Progress Bar]
+------------------------------------------------------------------*/
+
+.progress-box {
+  margin-top: 45px;
+  padding-right: 8px;
+
+  &:nth-of-type(2) {
+    margin-top: 37px;
+    letter-spacing: .5px;
+  }
+
+  &:nth-of-type(3) {
+    margin-top: 35px;
+  }
+
+  &:nth-of-type(4) {
+    margin-top: 36px;
+  }
+
+  .progress {
+    padding: 2px;
+    box-shadow: none;
+    height: 10px;
+    border: 1px solid #ddd;
+    border-radius: 0;
+  }
+
+  .progress-bar {
+    @include cubic-transition($delay: 0, $duration: 2000ms, $property: (all));
+    background-color: #009dda;
+  }
+}

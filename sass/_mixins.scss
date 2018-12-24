@@ -1,0 +1,39 @@
+// --------------------------------------------------
+// Font
+// --------------------------------------------------
+
+// eg: @include font($size: 14px, $style: italic, $weight: 400, $variant: normal, $family: $font-family-base);
+@mixin font($size: null, $style: null, $weight: null, $variant: null, $family: null) {
+    font-size: $size;
+    font-style: $style;
+    font-weight: $weight;
+    font-variant: $variant;
+    font-family: $family;
+}
+
+
+// --------------------------------------------------
+// Positioning
+// --------------------------------------------------
+
+// eg: @include position(absolute, $top: 5px, $left: 5px);
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
+    position: $position;
+    top: $top;
+    left: $left;
+    right: $right;
+    bottom: $bottom;
+}
+
+// --------------------------------------------------
+// Cubic Bezier Transition
+// --------------------------------------------------
+
+// eg: @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+@mixin cubic-transition($delay, $duration, $property) {
+    transition: {
+        duration: $duration;
+        property: $property;
+        timing-function: cubic-bezier(.7,1,.7,1);
+    }
+}
